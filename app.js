@@ -104,7 +104,7 @@ app.post("/failure", function (req, res) {
 
 // listen() method binds itself with the specified host and port to bind and listen for any connections.
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {  // sprocess.env.PORT is a dynemic port 
     
     console.log("now Server 3000 is live");
 
